@@ -653,6 +653,18 @@ header label {
 .dark-theme .archive-item-date {
   color: #87878d;
 }
+.curious-card .curious-item {
+  width: 100%;
+  display: flex;
+  min-height: 0;
+}
+.curious-card .curious-item .curious-item-link {
+  margin-left: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .post-wrap .categories-card {
   margin: 0 auto;
   margin-top: 1em;
