@@ -1,8 +1,8 @@
 new Valine({
     el: '#vcomments',
-    appId: "4mLkALYiIVPJnHp5JXNQKYep-9Nh9j0Va",
-    appKey: "ICyphckECpcJWwLcmu2hNCuC",
-    placeholder: '有什么想说的吗？',
+    appId: "idF9jRorias3dRyE8W6H2YsS-gzGzoHsz",
+    appKey: "kHfDfxgFMBmuJCvjgEq31aji",
+    placeholder: '恁啥咧?',
     avatar: "wavatar"
 })
 
