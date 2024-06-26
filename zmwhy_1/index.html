@@ -13,7 +13,7 @@
 
 
 
-<title>紫米烧卖 | 爺回</title>
+<title>为什么我们降息要等到美国降息之后？ | 爺回</title>
 
 
 
@@ -127,11 +127,76 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">紫米烧卖</h1>
+            <h1 class="post-title">为什么我们降息要等到美国降息之后？</h1>
             
                 <div class="post-meta">
                     
@@ -140,14 +205,14 @@
 
                     
                         <span class="post-time">
-                            Date: <a href="#">May 1, 2024</a>
+                            Date: <a href="#">May 21, 2024</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/kutian/categories/%E7%BE%8E%E9%A3%9F/">美食</a>
+                                <a href="/kutian/categories/%E5%A5%BD%E5%A5%87/">好奇</a>
                             
                         </span>
                     
@@ -156,8 +221,12 @@
         </header>
 
         <div class="post-content">
-            <p><strong>劳动节快乐~~</strong></p>
-<p><img src="/kutian/../kutian/image/zmsm.jpg"></p>
+            <h3 id="美国如此高的基准利率是为什么？"><a href="#美国如此高的基准利率是为什么？" class="headerlink" title="美国如此高的基准利率是为什么？"></a>美国如此高的基准利率是为什么？</h3><p>自去年7月以来，美联储的基准利率仍维持在5.25%至5.5%高位。有意思的是美联储周二表示会持续维持当前利率不变，才能战胜通胀。同时又预测今年仅仅会降息一次。</p>
+<p><img src="/kutian/../kutian/image/mlc.jpg"></p>
+<h3 id="我们为什么不能继续降息？"><a href="#我们为什么不能继续降息？" class="headerlink" title="我们为什么不能继续降息？"></a>我们为什么不能继续降息？</h3><p><em><strong>因为汇率，稳汇率是当前第一重要任务。</strong></em><br>目前我们最想做的是刺激经济，让资金流入市场，某种程度上属于货币宽松。因为这不仅可以拉动地产，扩大需求，增加企业利润，还可以向社会转移地方政府与地产商的债务。<br>但是美联储的高位利率，成为打压我们刺激经济的黑招。因为单方面货币宽松势必造成货币贬值，控制不好甚至转变成恶性通胀。<br>无法扩大需求，推动产业升级转型，外部被美国及其盟友围追堵截，搅局，实体经济的产业升级步伐也就非常缓慢。<br>实体没有利润，无论央行如何货币宽松，市场也不能消化，只能留在金融体系内套利和空转。</p>
+<h3 id="美联储真的能让经济朝自己预测的方向走吗？"><a href="#美联储真的能让经济朝自己预测的方向走吗？" class="headerlink" title="美联储真的能让经济朝自己预测的方向走吗？"></a>美联储真的能让经济朝自己预测的方向走吗？</h3><p>鬼晓得，也许美联储那帮精英自己都思维混乱掉了。要么降息，让通胀继续，要么维持高利率，让债务失控。<br>反正中美现在都在撑着，谁死撑，谁撑死只有到时才会知道。</p>
+<p><em><strong>但是，如果美国在这一轮中美金融战中失败，美国恐怕会来一场代理人战争来拯救自己的国运。（这点我非常同意温铁军教授的观点）</strong></em><br><em><strong>目前，美国在持续刺激拱火台海，南海，中印，朝鲜半岛地区紧张局势。</strong></em><br><em><strong>所以我们的军事必须在东亚，东南亚保持绝对的，压倒性的实力。只有这样，这个地区才会和平稳定。</strong></em></p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1J84y1D7D4/?spm_id_from=333.788&vd_source=fb2ebed98d5a3be7bb990a3cb2cebd7f"> 《针对我们的战争爆发迫在眉睫》  </a></p>
 
         </div>
 
@@ -178,7 +247,9 @@
                 <span class="tag">
                     
                     
-                        <a href="/kutian/tags/%E6%B7%B1%E5%A4%9C%E9%A3%9F%E5%A0%82/"># 深夜食堂</a>
+                        <a href="/kutian/tags/%E5%A5%BD%E5%A5%87/"># 好奇</a>
+                    
+                        <a href="/kutian/tags/%E7%BB%8F%E6%B5%8E/"># 经济</a>
                     
                         
                 </span>
@@ -191,10 +262,10 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/kutian/zmwhy_1/">为什么我们降息要等到美国降息之后？</a>
+                <a class="prev" rel="prev" href="/kutian/hjcr/">红姜烧肉</a>
             
             
-            <a class="next" rel="next" href="/kutian/xgcm/">香菇青菜炒面</a>
+            <a class="next" rel="next" href="/kutian/zmsm/">紫米烧卖</a>
             
         </section>
 
