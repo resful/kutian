@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Joh Yao">
+
+
+
+
+
+<title>北约和俄罗斯到底怎么一回事？ | 爺回</title>
+
+
+
+    <link rel="icon" href="/kutian/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/kutian/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/kutian/js/script.js"></script>
+    
+    <script src="/kutian/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/kutian/">首页</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/kutian/archives">文章</a>
+                
+                    <a class="menu-item" href="/kutian/categories">分类</a>
+                
+                    <a class="menu-item" href="/kutian/curious">好奇</a>
+                
+                    <a class="menu-item" href="/kutian/tags">标签</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/kutian/">首页</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/kutian/archives">文章</a>
+                
+                    <a class="menu-item" href="/kutian/categories">分类</a>
+                
+                    <a class="menu-item" href="/kutian/curious">好奇</a>
+                
+                    <a class="menu-item" href="/kutian/tags">标签</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">北约和俄罗斯到底怎么一回事？</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author">Joh Yao</a>
+                    
+
+                    
+                        <span class="post-time">
+                            Date: <a href="#">March 11, 2025</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/kutian/categories/%E5%A5%BD%E5%A5%87/">好奇</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>***北约东扩和俄乌战争有什么关系！？</p>
+<p><img src="/kutian/../kutian/image/beiyueeluosi.jpg"></p>
+<h3 id="苏联解体后，俄乌冲突前，北约做了哪5次东扩？"><a href="#苏联解体后，俄乌冲突前，北约做了哪5次东扩？" class="headerlink" title="苏联解体后，俄乌冲突前，北约做了哪5次东扩？"></a>苏联解体后，俄乌冲突前，北约做了哪5次东扩？</h3><p>1994年1月，北约出台“和平伙伴关系计划”，开辟了一条加入北约组织的途径。<br>1997年7月，北约马德里首脑会议上，决定接纳波兰，捷克和匈牙利为北约首批扩展成员国。<br>1999年4月，波兰，捷克和匈牙利成为正式北约成员国。北约东扩迈开了第一步。<br>2004年，爱沙尼亚、拉脱维亚、立陶宛、斯洛伐克、保加利亚、罗马尼亚和斯洛文尼亚七国加入北约。其中爱沙尼亚、拉脱维亚和立陶宛曾是苏联加盟国。<br>2009年，克罗地亚和阿尔巴尼亚加入北约。<br>2017年，黑山加入北约。<br>2020年，北马其顿加入北约，成为第30个成员国。<br>现实情况就是，这30个北约国家拥有10亿的人口，控制着几乎整个欧洲。</p>
+<h3 id="从两德统一的那年开始说起……"><a href="#从两德统一的那年开始说起……" class="headerlink" title="从两德统一的那年开始说起……"></a>从两德统一的那年开始说起……</h3><p>1990年10月3日，东德并入西德，完成德国历史上的又一次统一。 此之前的德国，由美、英、法、苏四国占领。由于1955年西德已然加入北约，那么统一后的德国对于北约是去还是留？<br>这是苏联最后一次可以让北约做出明确让步的机会。<br>只要让北约签订协议：  “统一后的德国可以继续留在北约，但作为交换条件，北约终止向东扩张，不得吸纳苏联的任何加盟国为其成员国”。<br>但美、法、德都仅仅向戈尔巴乔夫做了嘴巴“保证”，只要德国统一，北约不会将军队部署在原东德地区。 而戈尔巴乔夫同志，竟然就这么同意了！ 给后世留下了一个大瓜。<br>随即，接下来的4年时间，苏联及后来的俄罗斯陆续从德国撤出了至少35万军队和大量军事装备。</p>
+<h3 id="美俄之间的激荡30年……"><a href="#美俄之间的激荡30年……" class="headerlink" title="美俄之间的激荡30年……"></a>美俄之间的激荡30年……</h3><p>1991年12月20日，苏联还未正式解体，叶利钦突然致信在北约总部布鲁塞尔举行的北约与华约联合外长会议：“今天我们提出俄罗斯的北约成员国问题，但认为这是一个长期的政治目标。”</p>
+<p>1993年9月，叶利钦曾致信克林顿，对北约可能的东扩表示不满，要求建立泛欧安全体系。</p>
+<p>1994年6月22日，北约与俄罗斯签署“北约和平关系计划”与《俄罗斯-北约合作协定书》<br>俄罗斯认为：“和平伙伴关系计划”代替了“北约东扩计划”。<br>美国认为：“和平伙伴关系计划”和“北约东扩计划”是两回事。</p>
+<p>1994年12月5日，匈牙利欧洲安全与合作峰会上，乌克兰与美、俄、英签署《布达佩斯安全保障备忘录》 乌克兰同意放弃核武器，换取三国对其主权和领土完整的安全保障。<br>会上叶利钦对北约批评道：“你们为什么播下不信任的种子？认为各大洲和整个国际社会的命运可以通过一个单一的首都来管理是一种危险的幻想。”</p>
+<p>1995年5月，叶利钦在莫斯科会见克林顿时再次表示：“如果你们继续下去，我看到的只是对俄罗斯的羞辱……我们需要的是一个新的泛欧安全结构,而不是旧的! 如果我同意北约的边界向俄罗斯的边界扩展，那是我对俄罗斯人民的背叛。”<br>克林顿向叶利钦保证，北约东扩不会危及俄罗斯的安全，同意将北约东扩延迟到1996年两国总统选举之后。</p>
+<p>1995年6月，叶利钦再次向克林顿表示：“俄罗斯的立场是北约不应迅速扩张……重要的是，欧安组织应该发展为欧洲新安全秩序的主要机制。当然，北约也是一个因素，但北约应该演变成一个政治组织。”</p>
+<p>1996年，俄罗斯加入北约主导的波黑维和行动。</p>
+<p>1997年5月27日，北约与俄罗斯在巴黎签署《北约-俄罗斯相互关系、合作与安全基本文件》<br>该文件序言指出，俄罗斯和北约彼此不视彼此为对手，北约承诺不在新加入北约的国家额外长期部署作战部队。</p>
+<p>2000年6月，克林顿访问莫斯科，普京当面提出希望加入北约。克林顿回答：“Why not？”</p>
+<p>2002年5月，罗马峰会建立了“俄罗斯-北约理事会”。该机制中，俄罗斯有一定的发言权，但没有否决权。<br>2002年5月，俄罗斯组建了由“集体安全条约”发展而来的“集体安全条约组织（CSTO）”，由6个前苏联国家组成（俄罗斯、白俄罗斯、亚美尼亚、哈萨克斯坦、吉尔吉斯斯坦、塔吉克斯坦），该组织实际上就是个缩小版的北约，它可以成为俄罗斯在欧亚地区的政策工具。</p>
+<p>2003年和2004年，格鲁吉亚和乌克兰先后爆发颜色革命，新上台政权都采取“亲美反俄”立场。</p>
+<p>2008年4月，普京参加布加勒斯特北约峰会，会上强烈反对北约吸收乌克兰和格鲁吉亚。峰会最后通过声明称乌克兰和格鲁吉亚未来可以成为北约成员国，但是拒绝这两个国家加入“成员国行动计划”。</p>
+<p>2008年8月，俄格战争爆发。</p>
+<p>2014年4月，俄罗斯吞并克里米亚。同年，北约宣布中止“北约-俄罗斯理事会”所有的民事和军事合作，但维持政治对话。</p>
+<p>2019年8月，北约发布声明，支持美国退出“中导条约”。</p>
+<p>2021年10月，北约撤销俄罗斯驻北约使团8名成员资格，指责他们是俄罗斯情报人员。同年，俄罗斯暂停北约驻俄罗斯军事联络处，关闭北约驻俄罗斯信息处。</p>
+<p>2022年2月24日，俄乌战争爆发。</p>
+<h3 id="北约真的向戈尔巴乔夫承诺过“不东扩”吗？"><a href="#北约真的向戈尔巴乔夫承诺过“不东扩”吗？" class="headerlink" title="北约真的向戈尔巴乔夫承诺过“不东扩”吗？"></a>北约真的向戈尔巴乔夫承诺过“不东扩”吗？</h3><p>首先，美苏双方从没有关于“北约东扩”签订任何政治或法律约束性文件。所以不管北约是否东扩，法律层面讲，都没有“违约”。</p>
+<p>2021年6月俄罗斯外交部发言人扎哈罗娃公布的1990年美国国务卿詹姆斯·贝克与苏联外长爱德华·谢瓦尔德纳泽在莫斯科的谈话录音。录音中贝克说到了将非军事化德国东部的具体化的问题。<br>扎哈罗娃还提到贝克与戈尔巴乔夫会晤时说的北约“不会向东扩张哪怕一寸”。</p>
+<p>关键就是这句话！这句话的原话是个什么玩意？很遗憾，没人知道。后续政治人物的回忆也只是个大概内容。</p>
+<p>曾任奥地利驻苏联大使的弗里德里希·鲍尔在访谈中表示贝克确实说过 “北约不会向东扩张哪怕一寸”这句话。同时，鲍尔批评戈尔巴乔夫在这次重要外交上的不明智，美苏双方竟然都没有关于这次谈话的任何记录。</p>
+<p>而贝克回忆表述是：“如果德国保持北约成员国身份，北约的管辖权将不会向东扩展一寸”。</p>
+<p>1996年，老布什时期曾任美国驻苏联大使的杰克·马特洛克发表文章写道：“我见证了这一切(美国与联邦德国向俄罗斯所作出的不扩大北约的承诺)，但我们欺骗了俄罗斯。”</p>
+<p>2014年戈尔巴乔夫在接受德国《明镜周刊》采访时也表示：“贝克当时说：‘北约的管辖权不会向东扩展一寸’ 这是我们对德国统一达成共识的基础。”</p>
+<p>由此可以看出，戈尔巴乔夫老先生当年对东扩的理解是涵盖了原所有华约国家和地区。<br>而美国则告诉你东扩的意思是仅仅针对“管辖权”不向德国东部地区扩展，我可没说过不能扩展 “成员国”。再说了，贝克只是去谈德国统一的问题，他又无权代表北约，他得任何关于北约得承诺都是无效的。</p>
+<p>所以关于北约到底有没有承诺不东扩，如今演变成一出各说各话的”罗生门“。</p>
+<h3 id="为何北约拒绝俄罗斯？客观上的差异、分歧、矛盾……"><a href="#为何北约拒绝俄罗斯？客观上的差异、分歧、矛盾……" class="headerlink" title="为何北约拒绝俄罗斯？客观上的差异、分歧、矛盾……"></a>为何北约拒绝俄罗斯？客观上的差异、分歧、矛盾……</h3><p>苏联解体后，欧洲面临三种发展道路，更有意思的是，美俄两国都坚持认为自己属于欧洲国家！：</p>
+<ol>
+<li>建立一个以北约为核心的大西洋安全共同体，美国在其中发挥主导作用。</li>
+<li>发展和巩固欧共体&#x2F;欧盟，建立欧洲独立自主的安全实体，摆脱对美国的依赖。</li>
+<li>以欧安会&#x2F;欧安组织为核心，建立一个包含非欧洲国家的泛欧洲安全共同体。</li>
+</ol>
+<p>美俄两国都是具有强烈“使命感”的国家，在俄罗斯人心目种，俄罗斯不仅是地理意义上的大国，且注定要成为一个精神象征意义的大国。美国则自建国起就将自身设计成“人类灯塔”，一个担负建立世界效仿的“山巅之国”。<br>在实现各自“使命”的历史进程中，两国也发展出截然不同的外交方式：<br>俄罗斯走向外部世界的方法是看准时机，则实施疆域拓展和构建缓冲区域；与强国打交道时，主张合纵连横，互相制约的多级均衡体系。<br>美国则优先尽可能拓展价值体系和经济体系，并组建以共有价值体系为主导（其实就是美国主导）的制度，打破和削弱多级均衡体系（美国认为均衡体系会导致欧洲再度分裂）。</p>
+<p><u>美俄对欧洲安全框架在理念上出现了巨大差异。</u></p>
+<p>美国最初的战略：<br>希望建立美欧一体化，是包括美国、俄罗斯、土耳其在内的更广阔的欧洲范围内的一体化。<br>但美国是核心国家，其主导地位不可动摇。</p>
+<p>俄罗斯则反复强调：<br>要么发展包容俄罗斯的，突出俄罗斯大国地位的欧安组织取代北约，并希望建立以俄罗斯为核心的整个欧洲范围内的一体化。<br>要么让俄罗斯加入北约，但俄罗斯在北约内有特殊地位，即不同于其他中东欧国家，要高于一般成员国，在重大事项上具有与美国相同的权力。</p>
+<p><u>美俄在结构性权力分配上出现了重大的分歧。</u></p>
+<p>21世纪初，双方都试图增进互信而加强了交流，但两国国内都有持互不信任的强大政治力量存在。<br>比如我们的老朋友，亨利·基辛格就是坚定的反俄派代表人物。基辛格多次发表文章，“俄罗斯在欧洲却不属于欧洲；他与亚洲、中亚、东亚相邻，在沿边界地区，它的政策很难与北约目标协调。俄罗斯若加入北约，会把联盟削弱到毫无意义的地步。”<br>比如我们的另一个老朋友，普里马科夫也坚定的认为美国根本信不过：“他们只在口头上缓和与俄罗斯关系，而且故意在国际场合中非正式的说出来，没有一个西方政治家考虑过吸收俄罗斯加入北约的问题。</p>
+<p>而随着时间推移，面对北约多次东扩已成既定事实，北约已经成为欧洲安全的绝对核心，欧安组织彻底被边缘化。 俄罗斯人越发悲观的感觉，俄罗斯已经被孤立于欧洲之外，新秩序正在形成，而俄罗斯成了可有可无的旁观客。<br>进而遭到蔑视的心情逐渐转化成了愤怒。二者之间深刻的矛盾随时会爆发。</p>
+<h3 id="北约的终极目标是什么？欧洲的目标是什么？俄罗斯的目标是什么？"><a href="#北约的终极目标是什么？欧洲的目标是什么？俄罗斯的目标是什么？" class="headerlink" title="北约的终极目标是什么？欧洲的目标是什么？俄罗斯的目标是什么？"></a>北约的终极目标是什么？欧洲的目标是什么？俄罗斯的目标是什么？</h3><p>从历史发展进程，可以看到，美、俄、欧三方虽然存在深刻的矛盾，但又不是根本性的矛盾。<br>因为三方的最终目标其实有某种程度上的一致性。 即欧洲整体最终处于安全状态。但导致了一个非常有意思的不可能三角关系：</p>
+<p>欧洲要彻底安全必须让俄罗斯融入。<br>没有北约提供保护，欧洲不可能安全。<br>俄罗斯融入欧洲，北约就没有用了，欧洲就不安全了。</p>
+<p>参考文献：<br>李海东：《北约扩大研究1948—1999》<br>韩克敌：《美国与苏联解体》<br>郑羽：《普京时代》</p>
+
+        </div>
+
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/kutian/tags/%E5%A5%BD%E5%A5%87/"># 好奇</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/kutian/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/kutian/milestone/">历史的转折点</a>
+            
+        </section>
+
+    </article>
+
+    <p>
+        <br>
+    </p>
+
+    <div id="vcomments">
+        
+<script src="/kutian/js/Valine.min.js"></script>
+
+        
+<script src="/kutian/js/valine.js"></script>
+
+    </div>
+
+</div>
+
+<style type="text/css">
+    .v * {
+    color: #7e9ae7;
+    }
+
+    .vwrap {
+    max-width: 780px;
+    margin: auto;
+    }
+
+    .vcard {
+    max-width: 780px;
+    margin: auto;
+    }
+
+    .vinfo {
+    max-width: 780px;
+    margin: auto;
+    }
+</style>
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Joh Yao | Powered by <a href="https://nxz19.gitee.io/kutian/" target="_blank">爺回</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
